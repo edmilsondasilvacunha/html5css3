@@ -2,3 +2,30 @@
     Folha de estilo do site one page HTML5 e CSS3 - Passo a passo do professor José de Assis
     @author Edmilson da Silva Cunha
 */
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px){
+    body {
+        background-color: blue;
+    }
+}
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px){
+    body {
+        background-color: yellow;
+    }
+}
+/* Tablet Landscaep>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px){
+    body {
+        background-color: green;
+    }
+}
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px){
+    body {
+        background-color: red;
+    }
+}
