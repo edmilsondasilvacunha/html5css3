@@ -3,18 +3,48 @@
     @author Edmilson da Silva Cunha
 */
 
+/* Importação google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+/* Layout */
+.Container {
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+/* CSS resete*/
+*{
+     margin: 0;
+     border: 0;
+     padding: 0;
+}
+
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
     body {
-        background-color: blue;
+        background-color: blue;        
+    }
+    /* Layout */
+    .Container {
+        max-width: 540px;
     }
 }
+
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px){
     body {
         background-color: yellow;
+    }
+    /* Layout */
+    .Container {
+        max-width: 720px;
     }
 }
 /* Tablet Landscaep>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -22,10 +52,18 @@
     body {
         background-color: green;
     }
+    /* Layout */
+    .Container {
+        max-width: 960px;
+    }
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px){
     body {
         background-color: red;
+    }
+    /* Layout */
+    .Container {
+        max-width: 1140px;
     }
 }
