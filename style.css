@@ -11,10 +11,14 @@ body {
     font-size: 1em;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Layout */
 .Container {
     margin: 0 auto;
-    background-color: antiquewhite;
+    /*ackground-color: antiquewhite;*/
 }
 
 .Flex {
@@ -30,6 +34,23 @@ body {
 .Flex3 {
     display: flex;
     flex-direction: column;
+}
+
+.Flex4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Flex5 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Flex6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .Botao {
@@ -57,6 +78,38 @@ body {
      padding: 0;
 }
 
+/* cartões*/
+.Card {
+    margin-top: 25px;
+    width: 338px;
+    height: 520px;
+    background-color: #e8e8e8;
+    border: 1px solid #a1a1a1;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.Card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3 {
+    margin-top: 15px;
+}
+
+.Card p {
+    text-align: left;
+    color: #434343;
+    padding: 10px 30px 50px 30px;
+}
+
+.Card a {
+    padding: 10px 100px;
+    border: 0;
+}
+
+
+
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* Cabeçalho */
 header {
@@ -83,12 +136,12 @@ label {
 
 nav ul {
     list-style: none;
-    background-color: #343538;
+    background-color: rgba(52, 53, 56, 0.95);
     height: 100vh;
     position: fixed;
     top: 60px;
-    right: -100%;
-    width: 100%;
+    right: -65%;
+    width: 65%;
     transition: all 0.5s;
 }
 
@@ -205,6 +258,69 @@ main h2 {
     display: none;
 }
 
+/* Conteúdo */
+#conteudo {
+    padding: 50px 0px;
+}
+
+#conteudo h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#todos {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#todos a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+/* Rodape */
+address {
+    padding: 35px 10px 50px 10px;
+    background: url(img/background2.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+address a {
+    text-decoration: none;
+    color: #fff;
+}
+
+address img {
+    padding-top: 15px;
+}
+
+#iconeLocal {
+    display: none;
+}
+
+#dados {
+    margin: 30px 0px 15px 0px;
+}
+
+#googleMaps {
+    display: none;
+}
+
+footer {
+    padding: 50px;
+    background-color: #343538;
+    color: #fff;
+    text-align: center;
+}
+
+#social {
+    margin-top: 25px;
+}
+
 /* Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
     body {
@@ -224,6 +340,17 @@ main h2 {
     #video iframe {
         width: 560px;
         height: 315px;
+    }
+
+    /* rodape */
+    .Flex5 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #social {
+        margin: 0;
     }
 }
 
@@ -293,6 +420,7 @@ main h2 {
 
     nav ul {
         position: static;
+        width: 100%;
         height: auto;
         background-color: transparent;
         margin-top: 50px;
@@ -345,5 +473,22 @@ main h2 {
     #qrcode img {
         width: 225px;
         height: 225px;
+    }
+
+    /* rodape */
+    #iconeLocal {
+        display: inline;
+    }
+
+    #iconeMapa {
+        display: none;
+    }
+
+    #googleMaps {
+        display: inline;
+    }
+
+    .Flex6 {
+        flex-direction: row-reverse;
     }
 }
